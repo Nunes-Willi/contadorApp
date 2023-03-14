@@ -5,15 +5,17 @@ export default class Counter extends Component {
   state = {
     count: 0,
   };
-//   if() {
-//     count < 0
-//   }
 
   incrementar() {
+    if (this.state.count < this.props.limite) {
     this.setState({ count: this.state.count + 1 });
+    }
   }
   decrementar() {
+    if (this.state.count > this.props.limit) {
+
     this.setState({ count: this.state.count - 1 });
+    }
   }
 
   render() {

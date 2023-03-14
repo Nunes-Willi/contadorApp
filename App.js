@@ -1,13 +1,13 @@
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet,  View } from "react-native";
 import Counter from "./src/components/Counter";
 
 export default function App() {
   return (
     <View style={styles.container}>
-      <Counter />
-      <Counter />
-      <Counter />
-      <Counter />
+      <Counter limite={10} limit={0} />
+      <Counter limite={10} limit={0} />
+      <Counter limite={10} limit={0} />
+      <Counter limite={10} limit={0} />
     </View>
   );
 }
